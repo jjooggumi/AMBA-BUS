@@ -10,10 +10,10 @@
     출처: https://www.arm.com/architecture/system-architectures/amba
    
    : 여러가지 종류가 있지만 대부분 APB, AHB, AXI 버스를 주로 사용
-   
-   - APB
-   - AHB
-   - AXI
+   : 모듈마다 동작속도가 다르기에, 비슷한 속도(clk)를 가진 모듈끼리 같은 버스에 연결해 시스템 동작을 최적화 시킴
+   - APB : 저속 peripheeral 제어 등 단순 제어용 (UART, GPIO, ...)  
+   - AHB : APB보다 고성능이 필요한 장치용
+   - AXI : AHB보다 더 high performance, high frequency system용
    
 
 ---
